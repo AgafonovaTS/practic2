@@ -63,10 +63,15 @@ namespace ConsoleApp1
 
         public void Print() => Console.WriteLine($"номер: {number} модель: {model} вес: {weight} ");
 
-        public void receiveCall()
+        public void receiveCall(string name)
         {
             Console.WriteLine($"Звонит {name}");
         }
+        public void receiveCall(string name, int number)
+        {
+            Console.WriteLine($"Звонит {name}");
+        }
+
         public void getNumber()
         {
             Console.WriteLine(number);
